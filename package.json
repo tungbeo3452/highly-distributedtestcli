@@ -1,0 +1,32 @@
+{
+  "version": "0.0.1",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "build": "tsc",
+    "start": "node index.js",
+    "test": "jest",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write .",
+    "prepare": "husky install",
+    "precommit": "lint-staged",
+    "postinstall": "husky install",
+    "test-sample": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@bull-board/api": "^5.15.3",
+    "tsconfig-paths": "^4.2.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint": "^8.42.0",
+    "@ntegral/nestjs-sentry": "^4.0.1",
+    "@nestjs/bull": "^10.1.1",
+    "cheerio": "1.0.0-rc.12",
+    "rxjs": "^7.8.1",
+    "@pontem/liquidswap-sdk": "^0.7.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@aptos-labs/ts-sdk": "^1.9.1"
+  }
+}
